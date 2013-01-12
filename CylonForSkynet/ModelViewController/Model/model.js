@@ -17,8 +17,6 @@ function process_answer(answer) {
 }
 
 function submit_groovy_request(answer) {
-
-	if( document.form.loggedIn.checked ) return
 	
 	request = new XMLHttpRequest()
 	request.onreadystatechange = respond_answer
