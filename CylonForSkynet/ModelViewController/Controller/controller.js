@@ -1,6 +1,7 @@
 var $ = function (id) { return document.getElementById(id) }
 var $$ = function (base, id) { return base.getElementById(id) }
 var request
+var session
 
 /*
 function submit_tacos() {
@@ -33,19 +34,23 @@ function respond_answer() {
 
 function submit_tacos() {
 
-	create_view(process_answer("tacos"))
-	
+	process_answer("tacos")
+	create_view(session)
 
 }
 
 function submit_gravy() {
 
-	create_view(process_answer("gravy"))
+	process_answer("gravy")
+	create_view(session)
 
 }
 
 function submit_what() {
-	create_view(process_answer("what"))
+
+	process_answer("what")
+	create_view(session)
+	
 }
 
 
