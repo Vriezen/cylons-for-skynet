@@ -2,9 +2,13 @@ package evildead
 
 class Boomstick {
 	static void main(def args) {
-	def gravy = "Mhmm.. Tacos!"
-	def barf = "Your tacos are rotten!"
+	def gravy = "Mhmm.. Tacos!\n"
 	print gravy
-	print barf
+	gravy = "Your tacos are rotten!"
+	print gravy
+	gravy = "...your tacos are rotten!"
+	print "\nHello Tom, $gravy \n"
+
 	}
 }
+
